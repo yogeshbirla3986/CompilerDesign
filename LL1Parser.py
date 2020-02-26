@@ -209,15 +209,14 @@ for key1 in table:
 
 # In[30]:
 
-
 name = input("Enter a string ")
 z = len(name)
 i = 0
 stk = ['$','E']
 top = 1
 
-while(i < z):
-
+while(top >= 0):
+    #print(stk)
     if stk[top] == 'e':
         stk = stk[0:top]
         top -= 1
@@ -240,9 +239,3 @@ while(i < z):
     else:
         print("error")
         break
-
-
-# In[ ]:
-
-
-
