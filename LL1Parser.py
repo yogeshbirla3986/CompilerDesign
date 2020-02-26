@@ -207,7 +207,7 @@ for key1 in table:
 
 
 
-# In[26]:
+# In[30]:
 
 
 name = input("Enter a string ")
@@ -217,7 +217,7 @@ stk = ['$','E']
 top = 1
 
 while(i < z):
-    
+
     if stk[top] == 'e':
         stk = stk[0:top]
         top -= 1
@@ -229,6 +229,7 @@ while(i < z):
         
     elif stk[top] in ter:
         if name[i] not in table[stk[top]]:
+            print("error")
             break
         temp = table[stk[top]][name[i]]
         stk = stk[0:top]
@@ -242,13 +243,6 @@ while(i < z):
 
 
 # In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
